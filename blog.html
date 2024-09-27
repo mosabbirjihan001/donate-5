@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+
+
+    <title>Blog page</title>
+
+</head>
+
+<body class="lexend">
+    <nav class="sticky top-0 z-50 backdrop-blur bg-gray-100/50 mb-10">
+        <div class="pb-3">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <button id="home" class="btn btn-sm bg-green-300">Home</button>
+                </div>
+                <div class="navbar-center flex items-center">
+                    <img src="assets/logo.png" alt="logo">
+                    <h4 class="ml-3 hidden lg:block">Donate Bangladesh</h4>
+                </div>
+                <div class="navbar-end flex items-center">
+                    <img src="assets/coin.png" alt="coin">
+                    <h5 id="t-donation" class="ml-1">5500</h5>
+                    <h5 class="ml-1">BDT</h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="lexend flex flex-col gap-3 container mx-auto">
+        <h1 class="mb-4 text-4xl">Important FAQ</h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page
+                    so that programs can change the document structure, style, and content. The DOM represents the
+                    document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on
+                    multiple child elements by attaching a single event listener to a common ancestor element. Instead
+                    of attaching a click handler to each item, event delegation allows you to attach a single listener
+                    to the parent container.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>The code uses the getElementById method to select elements by their id attribute. It then modifies
+                    the elements' contents and properties using the following DOM manipulation techniques: innerHTML
+                    sets the HTML content inside the selected element. In this case, we change the heading's text to
+                    "New Heading".</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('home').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script src="javaScript/function.js"></script>
+    <script src="javaScript/main.js"></script>
+</body>
+
+</html>
